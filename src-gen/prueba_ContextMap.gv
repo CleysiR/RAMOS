@@ -1,0 +1,40 @@
+digraph "ContextMapGraph" {
+graph ["imagepath"="/tmp/GraphvizJava"]
+"AutorizacionAutenticacionContext" ["margin"="0.3","orientation"="107","shape"="egg","fontsize"="16","style"="bold","label"="AutorizacionAutenticacionContext\n","fontname"="sans-serif"]
+"ResenasContext" ["margin"="0.3","orientation"="152","shape"="egg","fontsize"="16","style"="bold","label"="ResenasContext\n","fontname"="sans-serif"]
+"BlogContext" ["margin"="0.3","orientation"="1","shape"="egg","fontsize"="16","style"="bold","label"="BlogContext\n","fontname"="sans-serif"]
+"GestionClientesContext" ["margin"="0.3","orientation"="21","shape"="egg","fontsize"="16","style"="bold","label"="GestionClientesContext\n","fontname"="sans-serif"]
+"CatalogProductosContext" ["margin"="0.3","orientation"="233","shape"="egg","fontsize"="16","style"="bold","label"="CatalogProductosContext\n","fontname"="sans-serif"]
+"OrdenesContext" ["margin"="0.3","orientation"="261","shape"="egg","fontsize"="16","style"="bold","label"="OrdenesContext\n","fontname"="sans-serif"]
+"EnviosContext" ["margin"="0.3","orientation"="192","shape"="egg","fontsize"="16","style"="bold","label"="EnviosContext\n","fontname"="sans-serif"]
+"UbicacionTiendasContext" ["margin"="0.3","orientation"="1","shape"="egg","fontsize"="16","style"="bold","label"="UbicacionTiendasContext\n","fontname"="sans-serif"]
+"PagosContext" ["margin"="0.3","orientation"="13","shape"="egg","fontsize"="16","style"="bold","label"="PagosContext\n","fontname"="sans-serif"]
+"AutorizacionAutenticacionContext" -> "ResenasContext" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"AutorizacionAutenticacionContext" -> "BlogContext" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"AutorizacionAutenticacionContext" -> "GestionClientesContext" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>CF</font></td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">U</td><td sides="trbl" bgcolor="white"><font>PL</font></td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"CatalogProductosContext" -> "OrdenesContext" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">U</td><td sides="trbl" bgcolor="white"><font>OHS</font></td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"OrdenesContext" -> "GestionClientesContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"OrdenesContext" -> "EnviosContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"OrdenesContext" -> "PagosContext" ["fontsize"="12","style"="bold","label"="Partnership","dir"="none","fontname"="sans-serif"]
+"EnviosContext" -> "UbicacionTiendasContext" ["headlabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">D</td><td sides="trbl" bgcolor="white"><font>ACL</font></td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+}
